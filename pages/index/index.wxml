@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='index'>
+    <home_map class="homeMap" bind:getLocation="getLocation"></home_map>
+    <text class="userinfo-nickname">所在位置：{{location}}</text>
+  </view>
+</view>

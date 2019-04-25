@@ -1,0 +1,10 @@
+<!--map.wxml-->
+<view class='mapView'>
+    <map id="myMap" class="myMap" scale="{{mapScale}}" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" markers="{{markers}}" bindmarkertap="showMarkerInfo" wx:if="{{map}}">
+      <cover-view class='tools'>
+        <cover-image src='../../static/img/magnify.png' class='item' bindtap="magnify"></cover-image>
+        <cover-image src='../../static/img/shrink.png' class='item' bindtap="shrink"></cover-image>
+        <cover-image src='../../static/img/position.png' class='item' bindtap="position"></cover-image>
+      </cover-view>
+    </map>
+</view>

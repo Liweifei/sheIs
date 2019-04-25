@@ -1,0 +1,31 @@
+<!--logs.wxml-->
+<view class='my'>
+  <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+  <view class="headBgBox">
+    <i-icon type="setup" i-class="setting"/>
+    <image class="headBg" src="/static/img/bg.png"></image>
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" lang="zh_CN" class='login'> 立即登录 </button> -->
+    <!-- <i-button i-class="login" bind:click="login" wx:if="{{!loginType}}">立即登录{{loginType}}</i-button> -->
+    <button wx:if="{{!loginType}}" open-type="getUserInfo" bindgetuserinfo="login" class='login'> 获取头像昵称 </button>
+    <image class="headProtrait" src="{{userInfo.avatarUrl}}" mode="cover" wx:if="{{loginType}}"></image>
+    <text class="userName" wx:if="{{loginType}}">{{userInfo.nickName}}</text>
+  </view> 
+  <view class='list'>
+    <i-cell-group>
+      <i-cell title="手机验证" is-link>
+        <i-icon slot="icon" type="mobilephone_fill" i-class="listIcon myInfo" />
+      </i-cell>
+      <!-- <i-cell title="我的赞" is-link url="/pages/dashboard/index"></i-cell>
+      <i-cell title="我的关注" is-link url="/pages/dashboard/index" only-tap-footer></i-cell> -->
+      <i-cell title="我的关注" is-link>
+        <i-icon slot="icon" type="like_fill" i-class="listIcon myAttention" />
+      </i-cell>
+      <i-cell title="我的赞" is-link>
+        <i-icon slot="icon" type="praise_fill" i-class="listIcon myPraise" />
+      </i-cell>
+      <i-cell title="我的评论" is-link>
+        <i-icon slot="icon" type="message_fill" i-class="listIcon myEvaluate" />
+      </i-cell>
+  </i-cell-group>
+  </view>
+</view>

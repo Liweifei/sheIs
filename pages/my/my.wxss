@@ -1,0 +1,67 @@
+.headBgBox{
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(222,71,66,0.41);
+}
+.headBg{
+  width: 750rpx;
+  height: 374rpx;
+  float: left;
+}
+.headBgBox .login{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  color:rgba(0, 0, 0, 0.6) !important;
+  background-color:#fff !important;
+}
+.setting{
+  position: absolute;
+  right: 45rpx;
+  top: 45rpx;
+  font-size: 58rpx !important;
+  color: #fff;
+}
+.headProtrait{
+  width: 158rpx;
+  height: 158rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 58rpx;
+  margin-left: -79rpx;
+  border-radius: 50%;
+}
+.userName{
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 238rpx;
+  font-size: 32rpx;
+}
+/* 列表区 */
+.list{
+  margin-top: 50rpx;
+  color: #333;
+}
+.list .listIcon{
+  font-size: 20px !important;
+  margin-right: 5px;
+}
+.list .myInfo{
+  color: #bd99f8;
+}
+.list .myAttention{
+  color: #fc8387;
+}
+.list .myPraise{
+  color: #8cb7f8;
+}
+.list .myEvaluate{
+  color: #fca261;
+}
